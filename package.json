@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "http-proxy": "^1.18.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.js\"",
+    "start:local": "export NODE_ENV=local && node src/index.js",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.js\" --fix"
+  }
+}
